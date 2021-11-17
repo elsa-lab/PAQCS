@@ -47,7 +47,7 @@ double costFun(pair<int,int> &center, vector<pair<int,int> > &neighbor, vector<i
     if (rest_deg>0)
             non_placed_cost=min(0,rest_deg-freedom)* (double) rest_act/rest_deg;
  
-    cost=(placed_neighbor_cost+non_placed_cost)*10+(rest_deg-freedom);
+    cost=(placed_neighbor_cost+non_placed_cost);
 
     return cost;
 }
