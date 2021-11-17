@@ -87,7 +87,7 @@ int main(int argc, char** argv) {
         pair<int,int> swaps;
 
         bound=graph.insertSwap1(outfile);
-        swaps=graph.insertSwap2(outfile,look,1);
+        swaps=graph.insertSwap2(outfile,look,2);
 
         if (swaps.first<minSwap){
             minSwap=swaps.first;
