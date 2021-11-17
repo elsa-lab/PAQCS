@@ -98,7 +98,8 @@ InterActGraph::InterActGraph(string file, int width, int height, int look):_numA
             continue;
         if (token.compare("CNOT")==0 || token.compare("SWAP")==0 || 
             token.compare("CZ")==0 || token.compare("GEO")==0 || 
-            token.compare("CP")==0 || token.compare("ZENO")==0){
+            token.compare("CP")==0 || token.compare("ZENO")==0 ||
+            token.compare("CX")==0){
             int idx1,idx2;
             ss>>token;
             idx1=_nameToIdx[token];
@@ -988,7 +989,8 @@ void swapQubit(int a, int b, map<int,locg> &locMap){
 bool isTwoQubitGate(string token){
     if (token.compare("CNOT")==0 || token.compare("CZ")==0 ||
             token.compare("CP")==0 || token.compare("SWAP")==0 ||
-            token.compare("GEO")==0 || token.compare("ZENO")==0)
+            token.compare("GEO")==0 || token.compare("ZENO")==0 ||
+            token.compare("CX")==0)
         return true;
     else
         return false;
