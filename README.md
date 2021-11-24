@@ -1,8 +1,8 @@
 # PAQCS ![Ubuntu](https://shields.io/badge/Ubuntu-16.04-orange) ![BoostCpp](https://shields.io/badge/Boost%20C++-1.58-green) ![Python_3.6](https://shields.io/badge/Python-3.6-blue)
 
-This repository contains the source code for the paper, "PAQCS: Physical Design-aware Fault-tolerant Quantum Circuit Synthesis," IEEE Transactions on VLSI Systems, which is a backup from the [source](https://www.princeton.edu/~cad/download/PAQCS.tar.gz). You may want to refer the [original Readme file](https://github.com/elsa-lab/PAQCS/blob/main/Readme.original.txt).
+This repository contains the source code for the paper, "PAQCS: Physical Design-aware Fault-tolerant Quantum Circuit Synthesis," IEEE Transactions on VLSI Systems, which is a backup from the [source](https://www.princeton.edu/~cad/download/PAQCS.tar.gz). You may want to refer to the [original Readme file](https://github.com/elsa-lab/PAQCS/blob/main/Readme.original.txt).
 
-In our paper, "Mapping Nearest Neighbor Compliant Quantum Circuits onto a 2-D Hexagonal Architecture," we reimplement PAQCS based on the original paper for a fair comparison in terms of execution time. Therefore, the numerical results reported in our paper may not be identical. Please refer to the guide for preparing PAQCS based on our implementation.
+In our paper, "Mapping Nearest Neighbor Compliant Quantum Circuits onto a 2-D Hexagonal Architecture," we reimplement PAQCS based on the original paper for a fair comparison in terms of execution time. Therefore, the numerical results reported in our paper may not be identical. Please refer to the guidelines for preparing PAQCS based on our implementation.
 
 ## Modification on the cost function of qubit placement [![commit](https://shields.io/badge/commit-2c48012-critical)](https://github.com/elsa-lab/PAQCS/commit/2c48012f386fe9577bd5c9728499941cb00111d5)
 
