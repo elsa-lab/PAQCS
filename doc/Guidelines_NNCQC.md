@@ -55,6 +55,19 @@ Max #swap gates reuqired: 22402
  Actual #swap gates used: 5004
 ```
 
-## Comparison Between the Original Implementation and Ours Implementation
+## Comparison Between the Original Implementation and Our Implementation
 
-TODO
+The following table shows the average improvement in UB, SWAP, and T among different types of benchmark circuits.
+
+| Category |      UB |   SWAP |       T |
+|:--------:|--------:|-------:|--------:|
+|   Tiny   | -15.29% |  6.78% |  55.85% |
+|   Small  |  -9.29% |  1.49% |   3.83% |
+|  Medium  | -15.75% | -2.01% | -60.99% |
+|   Large  | -10.65% |  2.55% | -76.47% |
+|          |         |        |         |
+|   Total  | -12.85% |  2.24% | -20.05% |
+
+Where `UB` stands for the upper bound of the number of SWAP gates for making a circuit nearest neighbor compliant after applying global reordering strategy, `SWAP` the number of inserted SWAP gates after applying the local reordering strategy, and `T` the execution time.
+
+For detailed numerical results of each benchmark circuit, please refer to [this spreadsheet](https://docs.google.com/spreadsheets/d/1OLfespZVpdhAm3e1DoJfWj5RmkiH0Yr7j8kqr9qzKR4/edit#gid=852549832).
